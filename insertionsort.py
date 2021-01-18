@@ -1,20 +1,18 @@
-enum = int(input("Kaç tane sayı girmek istiyorsunuz? : " ))  
+eleman_sayisi = int(input("Kaç tane sayı girmek istiyorsunuz? : " ))  
 
-arr = []
-new_arr=[]
+sayilar = []
 
-for a in range(0,enum):  
-    arr.append(int(input(f"Girmek istediğiniz {a+1}. sayı: "))) 
-print("Sıralamak istediğiniz sayılar: ",arr)
+for a in range(eleman_sayisi):  
+    sayilar.append(int(input(f"Girmek istediğiniz {a+1}. sayı: "))) 
+print("\nSıralamak istediğiniz sayılar: ",sayilar)
 
 
-for i in range(1,enum):
-
-    comp = arr[i]
-    loc = i
+for i in range(1,eleman_sayisi):
+    karsilastirma_degeri = sayilar[i]
+    index = i
     
-    while loc>0 and arr[loc-1]> comp:
-        arr[loc]=arr[loc-1]
-        loc -= 1
-    arr[loc] = comp
-print("Girdiğiniz sayıların sıralanmış hali: ",arr)
+    while index > 0 and sayilar[index-1] > karsilastirma_degeri :
+        sayilar[index] = sayilar[index-1]
+        index -= 1
+    sayilar[index] = karsilastirma_degeri
+print("\nGirdiğiniz sayıların sıralanmış hali: ",sayilar)

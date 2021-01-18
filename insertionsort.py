@@ -27,4 +27,10 @@ index her seferinde bir azalıyor çünkü her seferinde bir soldakine bakıyoru
 sağdaki sayıyı soldaki sayıdan küçük bulana kadar devam ediyorum ve küçük bulduğum 
 an döngüden çıkıpkarşılaştırdığım değeri bulduğum indexe atıyorum.
  
+ Çalışma şekli:
+a=[1, 3, 2, 4]
+a[2]=a[1]
+a[1]=2
+print(a)
+>>[1,2,3,4]
 """

@@ -16,3 +16,15 @@ for i in range(1,eleman_sayisi):
         index -= 1
     sayilar[index] = karsilastirma_degeri
 print("\nGirdiğiniz sayıların sıralanmış hali: ",sayilar)
+
+"""
+    for döngüsünde i benim kontrol ettiğim sayının indexi. i değeri her for 
+döngüsüne girildiğinde 1 artıyor. Çünkü bir sonraki kontrol edeceğim sayı öncekinin 
+sağındaki sayı.
+
+    while döngüsünde kontrol ettiğim sayıyı solundakilerle karşılaştırıyorum.
+index her seferinde bir azalıyor çünkü her seferinde bir soldakine bakıyorum.
+sağdaki sayıyı soldaki sayıdan küçük bulana kadar devam ediyorum ve küçük bulduğum 
+an döngüden çıkıpkarşılaştırdığım değeri bulduğum indexe atıyorum.
+ 
+"""
